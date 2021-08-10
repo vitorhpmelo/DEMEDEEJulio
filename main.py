@@ -11,6 +11,7 @@ import re
 
 
 sys = 'IEEE14/'
+caso= "caso4"
 
 dfDBAR=pd.read_csv(sys+'DBAR.csv',header=None)
 dfDBAR.columns=["de"]
@@ -19,7 +20,7 @@ dfDLIN.columns=["de","para"]
 dfDLIN['Nlin']=list(range(len(dfDLIN["de"])))
 
 dfbase=pd.read_csv(sys+'base.csv')
-dfcaso=pd.read_csv(sys+'caso1.csv')
+dfcaso=pd.read_csv(sys+caso+'.csv')
 Teste=dfbase['Medidas'].tolist()
 lstPf=[]
 lstQf=[]
